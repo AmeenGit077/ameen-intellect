@@ -41,7 +41,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 1.  **Clone the repository**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/AmeenGit077/ameen-intellect
     cd portfolio
     ```
 
