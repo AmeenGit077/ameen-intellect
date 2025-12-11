@@ -80,7 +80,7 @@ This project is currently unlicensed.
 ## 👤 Author
 
 **Ameenur Rahman**
-*   [LinkedIn](https://www.linkedin.com/)
+*   [LinkedIn](https://www.linkedin.com/in/ameenur-rahman-ssd/)
 *   [GitHub](https://github.com/AmeenGit077)
 
 ---
