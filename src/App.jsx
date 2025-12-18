@@ -58,7 +58,7 @@ const WorkPage = () => {
 const ContactPage = () => {
   return (
     <PageWrapper>
-      <div className="sm:px-16 px-6 max-w-7xl mx-auto">
+      <div className="sm:px-16 px-6 max-w-7xl mx-auto pt-6 sm:pt-12">
         <Contact />
       </div>
     </PageWrapper>
