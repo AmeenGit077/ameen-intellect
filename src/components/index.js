@@ -12,6 +12,7 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
+import SocialIcons from "./SocialIcons";
 
 export {
   Hero,
@@ -21,6 +22,7 @@ export {
   Experience,
   Works,
   Contact,
+  SocialIcons,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

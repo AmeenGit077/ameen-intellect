@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+
+import { SocialIcons } from ".";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -139,7 +142,38 @@ const Contact = () => {
             {loading ? "Sending..." : "Submit Message"}
           </button>
           {confirmation && <p className="text-sm text-green-500 mt-2">{confirmation}</p>}
+
         </form>
+
+        <div className="mt-10">
+          <p className={`${styles.sectionSubText} mb-6`}>Or connect with me on</p>
+          <SocialIcons socialLinks={[
+            {
+              name: "LinkedIn",
+              icon: Linkedin,
+              url: "https://www.linkedin.com/in/ameenur-rahman/",
+              color: "#0A66C2"
+            },
+            {
+              name: "Twitter",
+              icon: Twitter,
+              url: "https://twitter.com",
+              color: "#1DA1F2"
+            },
+            {
+              name: "Instagram",
+              icon: Instagram,
+              url: "https://instagram.com",
+              color: "#E4405F"
+            },
+            {
+              name: "Facebook",
+              icon: Facebook,
+              url: "https://facebook.com",
+              color: "#1877F2"
+            },
+          ]} />
+        </div>
       </motion.div>
 
       <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
