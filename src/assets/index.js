@@ -29,7 +29,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import facebook from "./socialMedia/facebook.png";
+import youtube from "./socialMedia/youtube.png";
 import instagram from "./socialMedia/instagram.png";
 import linkedin from "./socialMedia/linkedin.png";
 import twitter from "./socialMedia/twitter.png";
@@ -56,7 +56,7 @@ export {
   jasper,
   sp,
   sql,
-  facebook,
+  youtube,
   instagram,
   linkedin,
   twitter,

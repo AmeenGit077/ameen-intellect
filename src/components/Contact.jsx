@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { logo, facebook, instagram, linkedin, twitter } from "../assets";
+import { logo, youtube, instagram, linkedin, twitter } from "../assets";
 import { SocialIcons } from ".";
 
 import { styles } from "../styles";
@@ -167,10 +167,10 @@ const Contact = () => {
               color: "#E4405F"
             },
             {
-              name: "Facebook",
-              icon: facebook,
-              url: "https://facebook.com",
-              color: "#1877F2"
+              name: "YouTube",
+              icon: youtube,
+              url: "https://www.youtube.com/@ameenIntellect",
+              color: "#FF0000"
             },
           ]} />
         </div>
