@@ -7,12 +7,19 @@ import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => (
-  <motion.div className="xs:w-[250px] w-full" variants={fadeIn('right', 'spring', index * 0.5, 0.75)}>
+  <motion.div
+    className="xs:w-[250px] w-full"
+    variants={fadeIn('right', 'spring', index * 0.2, 0.5)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.1 }}
+  >
     <Tilt
       options={{
         max: 45,
         scale: 1,
         speed: 450,
+        gyroscope: false,
       }}
       className="bg-tertiary/20 backdrop-blur-lg rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col border border-white/10 hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
     >
@@ -46,7 +53,7 @@ const About = () => {
         complex requirements into elegant technical solutions.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 sm:mt-20 flex flex-wrap gap-6 sm:gap-10 justify-center sm:justify-start">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
