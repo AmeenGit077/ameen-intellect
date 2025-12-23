@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="hidden lg:block relative w-40 h-40 sm:w-60 sm:h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-[#915EFF]/20 transition-all duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1)] flex-shrink-0 group">
+          <div className="hidden lg:block relative w-32 h-32 sm:w-48 sm:h-48 lg:w-60 lg:h-60 rounded-full overflow-hidden border-[#915EFF]/20 transition-all duration-300 ease-[cubic-bezier(0.25,0.1,0.25,1)] flex-shrink-0 group">
             <img
               src={logo}
               alt="Ameen"

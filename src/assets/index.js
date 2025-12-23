@@ -29,6 +29,11 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import facebook from "./socialMedia/facebook.png";
+import instagram from "./socialMedia/instagram.png";
+import linkedin from "./socialMedia/linkedin.png";
+import twitter from "./socialMedia/twitter.png";
+
 export {
   cgi,
   python,
@@ -51,4 +56,8 @@ export {
   jasper,
   sp,
   sql,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
 };

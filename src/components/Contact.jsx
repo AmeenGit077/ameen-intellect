@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
+import { logo, facebook, instagram, linkedin, twitter } from "../assets";
 import { SocialIcons } from ".";
 
 import { styles } from "../styles";
@@ -150,25 +150,25 @@ const Contact = () => {
           <SocialIcons socialLinks={[
             {
               name: "LinkedIn",
-              icon: Linkedin,
+              icon: linkedin,
               url: "https://www.linkedin.com/in/ameenur-rahman/",
               color: "#0A66C2"
             },
             {
               name: "Twitter",
-              icon: Twitter,
+              icon: twitter,
               url: "https://twitter.com",
               color: "#1DA1F2"
             },
             {
               name: "Instagram",
-              icon: Instagram,
-              url: "https://instagram.com",
+              icon: instagram,
+              url: "https://instagram.com/ameenintellect/",
               color: "#E4405F"
             },
             {
               name: "Facebook",
-              icon: Facebook,
+              icon: facebook,
               url: "https://facebook.com",
               color: "#1877F2"
             },
