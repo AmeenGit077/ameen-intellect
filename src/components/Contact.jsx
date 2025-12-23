@@ -157,7 +157,7 @@ const Contact = () => {
             {
               name: "Twitter",
               icon: twitter,
-              url: "https://twitter.com",
+              url: "https://x.com/AmeenIntellect",
               color: "#1DA1F2"
             },
             {
