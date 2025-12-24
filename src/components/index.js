@@ -1,7 +1,7 @@
 import {
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
+  JavaCanvas,
   StarsCanvas,
 } from "./canvas";
 
@@ -25,6 +25,6 @@ export {
   SocialIcons,
   EarthCanvas,
   BallCanvas,
-  ComputersCanvas,
+  JavaCanvas,
   StarsCanvas,
 };
