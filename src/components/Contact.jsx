@@ -12,14 +12,14 @@ import "../index.css";
 
 const InputField = ({ label, value, onChange, placeholder, name, type }) => (
   <label className="flex flex-col">
-    <span className="text-white font-medium mb-4">{label}</span>
+    <span className="text-white font-medium mb-4 text-[clamp(0.875rem,1.5vw,1rem)]">{label}</span>
     <input
       type={type}
       name={name}
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="bg-tertiary/50 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border border-white/5 font-medium focus:border-white/20 transition-colors"
+      className="bg-tertiary/50 py-[clamp(0.75rem,2vw,1rem)] px-[clamp(1rem,3vw,1.5rem)] placeholder:text-secondary text-white text-[clamp(0.875rem,1.5vw,1rem)] rounded-lg outline-none border border-white/5 font-medium focus:border-white/20 transition-colors w-full"
     />
   </label>
 );
@@ -137,7 +137,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className="bg-tertiary py-[clamp(0.75rem,2vw,1rem)] px-[clamp(1.5rem,4vw,2rem)] rounded-xl outline-none w-fit text-white font-bold text-[clamp(0.875rem,1.5vw,1rem)] shadow-md shadow-primary hover:scale-105 transition-transform"
           >
             {loading ? "Sending..." : "Submit Message"}
           </button>
@@ -176,8 +176,13 @@ const Contact = () => {
         </div>
       </motion.div>
 
-      <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-        <EarthCanvas />
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="flex items-center justify-center xl:flex-1"
+      >
+        <div className="w-full max-w-[400px] h-[clamp(300px,35vw,400px)]">
+          <EarthCanvas />
+        </div>
       </motion.div>
     </div>
   );

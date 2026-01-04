@@ -36,12 +36,12 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
           </div>
         </div>
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <h3 className="text-white font-bold text-[clamp(1.25rem,2vw,1.5rem)]">{name}</h3>
+          <p className="mt-2 text-secondary text-[clamp(0.875rem,1.5vw,1rem)]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <p key={tag.name} className={`text-[clamp(0.75rem,1.5vw,0.875rem)] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -65,7 +65,7 @@ const Works = () => {
           repositories in it.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),360px))] justify-center gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} />
         ))}

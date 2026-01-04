@@ -9,8 +9,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .hash-span {
@@ -20,7 +23,8 @@
 }
 
 .gradient {
-  background: #000000; /* fallback for old browsers */
+  background: #000000;
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
@@ -52,32 +56,43 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by modifying the last value (0.5 in this case) */
-  z-index: 9999; /* Adjust the z-index to ensure it's displayed above other elements if necessary */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity by modifying the last value (0.5 in this case) */
+  z-index: 9999;
+  /* Adjust the z-index to ensure it's displayed above other elements if necessary */
 }
 
 @keyframes spin {
-  0%, 100% {
+
+  0%,
+  100% {
     /* Box shadow styles */
   }
+
   12.5% {
     /* Box shadow styles */
   }
+
   25% {
     /* Box shadow styles */
   }
+
   37.5% {
     /* Box shadow styles */
   }
+
   50% {
     /* Box shadow styles */
   }
+
   62.5% {
     /* Box shadow styles */
   }
+
   75% {
     /* Box shadow styles */
   }
+
   87.5% {
     /* Box shadow styles */
   }
@@ -115,14 +130,16 @@
 }
 
 .input {
-  background: #333; /* Background color */
+  background: #333;
+  /* Background color */
   padding: 16px 24px;
   color: #fff;
   border: none;
   border-radius: 8px;
   outline: none;
   font-weight: 600;
-  placeholder-color: #999; /* Placeholder text color */
+  placeholder-color: #999;
+  /* Placeholder text color */
 }
 
 .input-error {
@@ -130,13 +147,15 @@
 }
 
 .submit-button {
-  background: #c0c0c0; /* Background color */
+  background: #c0c0c0;
+  /* Background color */
   padding: 12px 24px;
   border-radius: 16px;
   outline: none;
   color: #fff;
   font-weight: 600;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the button */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Box shadow for the button */
 }
 
 .confirmation {
