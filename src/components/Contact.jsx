@@ -12,14 +12,14 @@ import "../index.css";
 
 const InputField = ({ label, value, onChange, placeholder, name, type }) => (
   <label className="flex flex-col">
-    <span className="text-white font-medium mb-4 text-[clamp(0.875rem,1.5vw,1rem)]">{label}</span>
+    <span className="text-white font-semibold mb-2.5 text-[clamp(0.875rem,1.5vw,0.9375rem)]">{label}</span>
     <input
       type={type}
       name={name}
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      className="bg-tertiary/50 py-[clamp(0.75rem,2vw,1rem)] px-[clamp(1rem,3vw,1.5rem)] placeholder:text-secondary text-white text-[clamp(0.875rem,1.5vw,1rem)] rounded-lg outline-none border border-white/5 font-medium focus:border-white/20 transition-colors w-full"
+      className="bg-[#161622]/90 py-3.5 px-4 placeholder:text-secondary/60 text-white text-[clamp(0.875rem,1.5vw,1rem)] rounded-xl outline-none border border-white/10 font-normal focus:border-[#8b5cf6] focus:ring-1 focus:ring-[#8b5cf6]/50 transition-all w-full shadow-inner"
     />
   </label>
 );
@@ -101,11 +101,11 @@ const Contact = () => {
 
   return (
     <div className={`flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-tertiary/20 backdrop-blur-lg p-8 rounded-2xl border border-white/10 shadow-lg">
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex-[0.75] bg-[#12121A]/85 backdrop-blur-xl p-8 sm:p-10 rounded-2xl border border-white/10 shadow-2xl shadow-purple-500/5">
         <p className={styles.sectionSubText}>Get In Touch</p>
-        <h1 className={styles.sectionHeadText}>Contact Me</h1>
+        <h1 className={styles.sectionHeadText}>Contact Me.</h1>
 
-        <form ref={formRef} onSubmit={handleSubmit} className="mt-5 flex flex-col gap-4">
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
           <InputField
             label="Full Name"
             name="name"
@@ -114,7 +114,7 @@ const Contact = () => {
             placeholder="John Doe"
             type="text"
           />
-          {nameError && <span className="text-red-500">{nameError}</span>}
+          {nameError && <span className="text-red-400 text-xs font-medium">{nameError}</span>}
 
           <InputField
             label="Email Address"
@@ -124,7 +124,7 @@ const Contact = () => {
             placeholder="johndoe@example.com"
             type="email"
           />
-          {emailError && <span className="text-red-500">{emailError}</span>}
+          {emailError && <span className="text-red-400 text-xs font-medium">{emailError}</span>}
 
           <InputField
             label="Message"
@@ -137,12 +137,12 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-[clamp(0.75rem,2vw,1rem)] px-[clamp(1.5rem,4vw,2rem)] rounded-xl outline-none w-fit text-white font-bold text-[clamp(0.875rem,1.5vw,1rem)] shadow-md shadow-primary hover:scale-105 transition-transform"
+            disabled={loading}
+            className="figma-btn-gradient py-3.5 px-8 rounded-xl outline-none w-fit text-white font-bold text-[15px] shadow-lg shadow-purple-500/25 hover:scale-105 transition-all mt-2 cursor-pointer disabled:opacity-50"
           >
             {loading ? "Sending..." : "Submit Message"}
           </button>
-          {confirmation && <p className="text-sm text-green-500 mt-2">{confirmation}</p>}
-
+          {confirmation && <p className="text-sm font-medium text-emerald-400 mt-2">{confirmation}</p>}
         </form>
 
         <div className="mt-10">

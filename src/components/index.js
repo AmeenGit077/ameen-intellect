@@ -13,6 +13,7 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
 import SocialIcons from "./SocialIcons";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -23,6 +24,7 @@ export {
   Works,
   Contact,
   SocialIcons,
+  Footer,
   EarthCanvas,
   BallCanvas,
   JavaCanvas,

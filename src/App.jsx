@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { About, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
+import { About, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Works, Footer } from './components';
 
 /**
  * Scrolls to top of page on route change
@@ -74,13 +74,16 @@ const App = () => {
       }}
     >
       <ScrollToTop />
-      <div className="relative z-0 bg-primary min-h-screen bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed">
+      <div className="relative z-0 bg-primary min-h-screen bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed flex flex-col justify-between">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/work" element={<WorkPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/work" element={<WorkPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

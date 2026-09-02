@@ -41,6 +41,29 @@ html {
   background: -webkit-linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.figma-btn-gradient {
+  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.figma-btn-gradient:hover {
+  background: linear-gradient(135deg, #9f75ff 0%, #22d3ee 100%);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.45);
+}
+
+.figma-card-glass {
+  background: rgba(18, 18, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.figma-card-glass:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(139, 92, 246, 0.15);
+}
+
 .orange-text-gradient,
 .green-text-gradient,
 .blue-text-gradient,

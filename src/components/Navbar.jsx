@@ -228,27 +228,30 @@ const Navbar = ({ menuItems = navLinks }) => {
   return (
     <nav
       className={`${styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${scrolled ? 'bg-primary/90 backdrop-blur-lg shadow-lg py-3' : 'bg-transparent'
+        } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${scrolled ? 'bg-[#09090E]/85 backdrop-blur-xl border-b border-white/5 shadow-2xl py-3.5' : 'bg-transparent'
         }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex flex-col sm:flex-row sm:items-center leading-none">
-            <span>Ameenur</span>
-            <span className="hidden sm:block sm:ml-1 text-[#915EFF]">Rahman</span>
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#8b5cf6] to-[#06b6d4] flex items-center justify-center shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform">
+            <span className="text-white font-black text-lg">A</span>
+          </div>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex flex-row items-center gap-1.5 leading-none">
+            <span>Ameen</span>
+            <span className="text-secondary font-normal text-[15px]">| Developer</span>
           </p>
         </Link>
 
         {/* Mobile/Tablet Profile Pic (Hidden on Desktop) */}
         <div className="lg:hidden flex-1 flex justify-end mr-4">
-          <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#915EFF]/50">
+          <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[#8b5cf6]/50">
             <img
               src={logo}
               alt="profile"
@@ -264,7 +267,7 @@ const Navbar = ({ menuItems = navLinks }) => {
           <li className="ml-4">
             <button
               onClick={toggleResume}
-              className="flex items-center gap-2 bg-[#915EFF] hover:bg-[#7e4bd6] text-white px-5 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-purple-500/25"
+              className="flex items-center gap-2 figma-btn-gradient text-white px-5 py-2.5 rounded-xl font-semibold text-[15px] transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/20"
             >
               <FileText className="w-4 h-4" />
               <span>Resume</span>
